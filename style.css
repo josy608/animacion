@@ -1,5 +1,18 @@
 * { box-sizing: border-box;}
 body { margin: 0; padding: 0; }
+.ground {
+  animation: move 10s steps(1000) infinite forwards;
+}
+@keyframes move {
+  100% { background-position: -1680px 0px; }
+}
+.enemy {
+  animation: walk 10s steps(1000) infinite forwards, jump 3s steps(1000) infinite forwards;
+}
+@keyframes walk {
+  100% { margin-left: 1024px;  transform: scale(1);  }
+}
+
 .background {
 
   width: 100vw;
